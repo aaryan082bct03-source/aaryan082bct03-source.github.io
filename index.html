@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <!-- Google Font import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sticky header with brand and navigation -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="brand">Name: Aaryan </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <button id="countButton">Count</button>
+    <p id = "clicks">Number of clicks: 0</p>
+    <button id="colorButton">Change Color</button>
+    <button id="hoverButton">Reset Color</button>
+    <!-- Hero section with greeting, tagline, and action button -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p>Hello, I am Aaryan studying computer engineering.</p>
+        <h1>Designing thoughtful digital experiences.</h1>
+        <p>I'm a beginner front-end developer building clean, responsive websites with HTML, CSS, and JavaScript.</p>
+        <a class="btn" href="#projects">See My Work</a>
+      </div>
+    </section>
+
+    <!-- About Me section with placeholder text -->
+    <section class="about" id="about">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>I am 19 years old and currently studying computer engineering.</p>
+      </div>
+      <p>
+        I am a motivated beginner learning HTML and CSS to create beautiful and reliable websites. This portfolio showcases projects, skills, and a commitment to responsive design.
+      </p>
+    </section>
+
+    <!-- Projects section with responsive project cards -->
+    <section class="projects" id="projects">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>Here are a few projects that demonstrate layout, styling, and responsive design.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Project One</h3>
+          <p>A sample project card with a short description of the build and the technologies used.</p>
+        </article>
+        <article class="project-card">
+          <h3>Project Two</h3>
+          <p>A second project example, showing how content can be presented in a clean and simple way.</p>
+        </article>
+        <article class="project-card">
+          <h3>Project Three</h3>
+          <p>A third project placeholder, perfect for showcasing a design or front-end challenge you completed.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact section with accessible form labels -->
+    <section class="contact" id="contact">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Get in touch to discuss projects or collaboration opportunities.</p>
+      </div>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer with copyright information -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+'@ | Set-Content -Path 'index.html' -Encoding UTF8
