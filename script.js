@@ -22,3 +22,7 @@ countButton.addEventListener('click', function(){
     //clicksDisplay.textContent = "Number of clicks:" + no_of_clicks; does same thing
     
 });
+
+//loll4
+
+//hello world
